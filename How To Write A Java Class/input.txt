@@ -1,0 +1,9 @@
+Dog
+-name:String
+-age:int
+Dog()
+Dog(name:String)
++getName():String
++getAge():int
++setName(name:String)
++bark()
