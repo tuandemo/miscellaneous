@@ -5,7 +5,7 @@ class Dog {
 
 	Dog() { }
 
-	Dog(String name) { }
+	Dog(String name, int age) { }
 
 	public String getName() { }
 

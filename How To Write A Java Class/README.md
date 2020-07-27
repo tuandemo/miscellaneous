@@ -8,7 +8,7 @@ Dog
 -name:String
 -age:int
 Dog()
-Dog(name:String)
+Dog(name:String,age:int)
 +getName():String
 +getAge():int
 +setName(name:String)
@@ -24,7 +24,7 @@ class Dog {
 
 	Dog() { }
 
-	Dog(String name) { }
+	Dog(String name, int age) { }
 
 	public String getName() { }
 
