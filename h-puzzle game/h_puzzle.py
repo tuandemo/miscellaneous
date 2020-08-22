@@ -48,7 +48,6 @@ def generate(n = 9):
         x[x.index(hiden_pos + 1)] = None
         if solvable(x): break
 
-
     print('%d-puzzle game | %d-%d' % (n - 1, random_permutation, hiden_pos + 1))
     input('> start\r')
 
