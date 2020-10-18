@@ -1,5 +1,6 @@
-* `lui` - Load upper immediate
-* `ori` - Bitwise or immediate
+`lui` - Load upper immediate<br>
+`ori` - Bitwise or immediate<br>
+<hr>
 
 ### Khởi tạo cho thanh ghi 32-bit
 Thực hiện lần lượt các lệnh:
