@@ -1,5 +1,5 @@
-`lui` - Load upper immediate
-`ori` - Bitwise or immediate
+* `lui` - Load upper immediate
+* `ori` - Bitwise or immediate
 
 ### Khởi tạo cho thanh ghi 32-bit
 Thực hiện lần lượt các lệnh:
@@ -30,3 +30,4 @@ ori $s0, $s0, 0x403B
 Sau khi nạp, nửa thấp của `$s0` chứa giá trị
 `0100 0000 0011 1011 = 0x403B`
 và `$s0` đã chứa giá trị 32-bit như yêu cầu.
+
