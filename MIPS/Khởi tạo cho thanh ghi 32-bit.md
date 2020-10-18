@@ -1,3 +1,6 @@
+`lui` - Load upper immediate
+`ori` - Bitwise or immediate
+
 ### Khởi tạo cho thanh ghi 32-bit
 Thực hiện lần lượt các lệnh:
 ```
