@@ -77,7 +77,7 @@ exit:
 	syscall                               # exit
 
 ```
-## Jump/Jump-and-return
+## Jump/Jump-and-link/Jump-register
 _SwapIntegers.asm_
 ```
 .data
