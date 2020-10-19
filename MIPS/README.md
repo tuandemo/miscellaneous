@@ -47,4 +47,4 @@ srl dReg, sReg, Imm            # Shift Right logical
 ## References
 * [Programmed Instroduction to MIPS Assembly Language](https://chortle.ccsu.edu/AssemblyTutorial/)
 * [MIPS Instruction Reference](http://www.mrc.uidaho.edu/mrc/people/jff/digital/MIPSir.html)
-* [Lean MIPS Assembly in Y Minutes](https://learnxinyminutes.com/docs/mips/)
+* [Learn MIPS Assembly in Y Minutes](https://learnxinyminutes.com/docs/mips/)
