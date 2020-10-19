@@ -1,4 +1,25 @@
 ## A Few MIPS Examples
+
+***
+
+### Hello World
+```
+.data
+msg: .asciiz "Hello World!\n"
+
+.text
+main:
+	la $a0, msg               # load adress of msg to $a0 (a0 := &msg)
+	li $v0, 4                 # load 4 to $v0 (v0 := 4)
+	syscall                   # request a service with system call code 4 (saved in $v0), which means to print a string (saved in $a0)
+exit:
+	li $v0, 10                # v0 := 10
+	syscall                   # exit (system call code 10)
+
+```
+
+***
+
 ### If-Else
 _HowOldAreYou.asm_
 
