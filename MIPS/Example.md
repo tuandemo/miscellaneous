@@ -1,6 +1,6 @@
 ## A Few MIPS Examples
 ### If-Else
-`HowOldAreYou.asm`
+_HowOldAreYou.asm_
 
 ```
 .data
@@ -35,7 +35,7 @@ exit:
 
 ```
 ### Do-While
-`PasswordReading.asm`
+_PasswordReading.asm_
 ```
 .data
 question: .asciiz "Enter your password (4 characters): "
@@ -76,4 +76,60 @@ exit:
 	li $v0, 10
 	syscall                               # exit
 
+```
+## Jump/Jump-and-return
+_SwapIntegers.asm_
+```
+.data
+text1: .asciiz "Enter first number: "
+text2: .asciiz "Enter second number: "
+text3: .asciiz "After swapping: "
+space: .asciiz ", "
+endln: .asciiz "\n"
+
+.text
+main:
+	jal input
+	jal swap
+	jal print
+	j exit
+input:
+	la $a0, text1
+	li $v0, 4
+	syscall                # print text1
+	li $v0, 5
+	syscall                # v0 := read_int
+	move $a1, $v0          # a1 := v0
+	la $a0, text2
+	li $v0, 4
+	syscall                # print text2
+	li $v0, 5
+	syscall                # v0 := read_int
+	move $a2, $v0          # a2 := v0
+	jr $ra
+swap:
+	move $t1, $a1          # t1 := a1
+	move $t2, $a2          # t2 := a2
+	move $a2, $t1          # a2 := t1
+	move $a1, $t2          # a1 := t2
+	jr $ra
+print:
+	la $a0, text3
+	li $v0, 4
+	syscall                # print text3
+	move $a0, $a1
+	li $v0, 1
+	syscall                # print a0 (= a1)
+	la $a0, space
+	li $v0, 4
+	syscall                # print space
+	move $a0, $a2
+	li $v0, 1
+	syscall                # print a0 (= a2)
+	la $a0, endln
+	li $v0, 4
+	syscall                # print endln
+exit:
+	li $v0, 10
+	syscall                # exit
 ```
